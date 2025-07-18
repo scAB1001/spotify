@@ -1,0 +1,17 @@
+{
+    "tabs":
+    {
+        "downloaded": "Downloaded",
+        "playlists": "Playlists",
+        "develop": "Develop",
+        "statistics": "Statistics"
+    },
+
+    "colours":
+    {
+        "green": "green", 
+        "blue": "blue", 
+        "orange": "orange", 
+        "purple": "purple"
+    }
+}

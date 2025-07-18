@@ -1,0 +1,75 @@
+/* theme.qss */
+
+QVBoxLayout { 
+/* default button */ 
+    background-color: #008000;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+QVBoxLayout:hover { 
+/* hover */ 
+    background-color: #006F00;
+}
+
+QLabel { 
+/* default button */ 
+    background-color: #008000;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+QListWidget { 
+/* default button */ 
+    background-color: #008000;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+QPushButton { 
+/* default button */ 
+    background-color: #008000;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+QPushButton:hover { 
+/* hover */ 
+    background-color: #006F00;
+}
+
+QPushButton#importBtn { 
+/* only styling the 'Import' button */ 
+    /*background-color: #0987c2;*/
+}
+
+QPushButton#renameBtn { 
+/* only styling the 'Rename' button */ 
+    background-color: #0987c2;
+}
+
+QPushButton#renameBtn:hover { 
+/* only styling the 'Rename' button */ 
+    background-color: #0b6f9e;
+}
+
+QPushButton#testBtn { 
+/* only styling the 'Test' button */ 
+    background-color: #d48e0c;
+}
+
+QPushButton#testBtn:hover { 
+/* only styling the 'Test' button */ 
+    background-color: #be8212;
+}
+
+QPushButton#playPauseBtn { 
+/* only styling play/pause */ 
+
+}
+
+/* …and so on… */
