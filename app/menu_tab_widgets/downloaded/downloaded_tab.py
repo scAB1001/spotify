@@ -3,7 +3,7 @@ from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput  # type: ignore
 from PyQt6.QtCore import QUrl  # type: ignore
 from PyQt6.QtGui import QIcon  # type: ignore
 from core.controller import controller
-from core.models.Song import Song
+from core.models.models import Song
 from mutagen.mp3 import MP3  # type: ignore
 import os
 

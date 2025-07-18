@@ -1,7 +1,7 @@
 import sys
 import json
 from pathlib import Path
-from core.data_access import init_db
+from core.models.models import init_db
 from PyQt6.QtWidgets import QApplication, QMainWindow, QTabWidget  # type: ignore
 from menu_tab_widgets import TAB_CLASS_MAP
 from PyQt6.QtGui import QIcon  # type: ignore
