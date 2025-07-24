@@ -1,11 +1,9 @@
-# Remove
-
 *__pycache__/
 *.py[cod]
 *$py.class
 
 *.txt
-
+x.py
 venv/
 env/
 .env/

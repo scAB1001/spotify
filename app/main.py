@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 from core.models.models import init_db
 from PyQt6.QtWidgets import QApplication, QMainWindow, QTabWidget  # type: ignore
+from PyQt6.QtCore import Qt  # type: ignore
 from menu_tab_widgets import TAB_CLASS_MAP
 from PyQt6.QtGui import QIcon  # type: ignore
 from core.controller import controller  # Shared state
@@ -27,7 +28,7 @@ class MainWindow(QMainWindow):
         self.tabs = QTabWidget()
         self.setCentralWidget(self.tabs)
         self.init_tabs()
-
+        
     def get_from_options(self, item):
         return list(self.options.get(item, {}).values())  
 
@@ -36,6 +37,7 @@ class MainWindow(QMainWindow):
         colours = self.get_from_options("colours")
         for name, colour in zip(tab_names, colours):
             cls = TAB_CLASS_MAP.get(name)
+            print(name, colour, cls)
             if cls:
                 self.tabs.addTab(cls(colour), name)
 
@@ -45,8 +47,7 @@ if __name__ == "__main__":
         opts = json.load(f)
 
     app = QApplication(sys.argv)
-    # load your global QSS files here:
-    load_stylesheet(app, "styles/theme_base.qss")  # "styles/buttons.qss")
+    load_stylesheet(app, "styles/theme_base.qss")
     
     window = MainWindow(opts)
     window.resize(600, 400)
