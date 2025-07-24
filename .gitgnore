@@ -3,7 +3,6 @@
 *$py.class
 
 *.txt
-x.py
 venv/
 env/
 .env/
@@ -24,11 +23,8 @@ database/*.db
 
 .vscode/
 .idea/
-*.sublime-workspace
-*.sublime-project
 
 .coverage
-htmlcov/
 .pytest_cache/
 
 *.env
